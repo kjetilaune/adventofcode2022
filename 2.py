@@ -1,3 +1,5 @@
+from functions import *
+
 #Task 1
 
 def playMatch(opponent, me):
@@ -13,7 +15,7 @@ def playMatch(opponent, me):
 		return "L"
 
 def main1():
-	myList = [tuple(map(str, line.rstrip().split(" "))) for line in open('2.txt')]
+	myList = readTuples('2.txt')
 
 	score = {'X': 1, 'Y': 2, 'Z': 3, 'L': 0, 'D': 3, 'W': 6}
 
@@ -26,7 +28,7 @@ def main1():
 		
 	print totalScore
 
-#main1()
+main1()
 
 
 
@@ -44,7 +46,7 @@ def findPlay(opponent, result):
 		return plays[plays.index(opponent) -2]
 
 def main2():
-	myList = [tuple(map(str, line.rstrip().split(" "))) for line in open('2.txt')]
+	myList = readTuples('2.txt')
 
 	score = {'X': 0, 'Y': 3, 'Z': 6, 'A': 1, 'B': 2, 'C': 3}
 	totalScore = 0

@@ -1,7 +1,9 @@
+from functions import *
+
 # Task 1
 
 def task1():
-	myList = [line.rstrip() for line in open('1.txt')]
+	myList = readLines('1.txt')
 	calList = []
 	counter = 0
 	for item in myList:
@@ -13,11 +15,12 @@ def task1():
 
 	print max(calList)
 
+task1()
 
 #Task 2
 
 def task2():
-	myList = [line.rstrip() for line in open('1.txt')]
+	myList = readLines('1.txt')
 	calList = []
 	counter = 0
 	for item in myList:
