@@ -1,4 +1,4 @@
-
+# Task 1
 
 def task1():
 	myList = [line.rstrip() for line in open('1.txt')]
@@ -14,6 +14,8 @@ def task1():
 	print max(calList)
 
 
+#Task 2
+
 def task2():
 	myList = [line.rstrip() for line in open('1.txt')]
 	calList = []
@@ -27,4 +29,5 @@ def task2():
 
 	calList.sort()	
 	print calList[-1] + calList[-2] + calList[-3]
+
 task2()
