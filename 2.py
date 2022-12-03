@@ -15,7 +15,7 @@ def playMatch(opponent, me):
 		return "L"
 
 def main1():
-	myList = readTuples('2.txt')
+	myList = read_tuples('2.txt')
 
 	score = {'X': 1, 'Y': 2, 'Z': 3, 'L': 0, 'D': 3, 'W': 6}
 
@@ -25,8 +25,8 @@ def main1():
 		opponent, me = match[0], match[1]
 
 		totalScore += score[me] + score[playMatch(opponent, me)]
-		
-	print totalScore
+
+	print(totalScore)
 
 main1()
 
@@ -46,7 +46,7 @@ def findPlay(opponent, result):
 		return plays[plays.index(opponent) -2]
 
 def main2():
-	myList = readTuples('2.txt')
+	myList = read_tuples('2.txt')
 
 	score = {'X': 0, 'Y': 3, 'Z': 6, 'A': 1, 'B': 2, 'C': 3}
 	totalScore = 0
@@ -56,7 +56,7 @@ def main2():
 
 		totalScore += score[result] + score[findPlay(opponent, result)]
 
-	print totalScore
+	print(totalScore)
 
 	
 

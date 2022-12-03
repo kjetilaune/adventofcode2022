@@ -3,7 +3,7 @@ from functions import *
 # Task 1
 
 def task1():
-	myList = readLines('1.txt')
+	myList = readlines('1.txt')
 	calList = []
 	counter = 0
 	for item in myList:
@@ -20,7 +20,7 @@ task1()
 #Task 2
 
 def task2():
-	myList = readLines('1.txt')
+	myList = readlines('1.txt')
 	calList = []
 	counter = 0
 	for item in myList:
