@@ -13,7 +13,7 @@ def task1():
 			continue
 		counter += int(item)
 
-	print max(calList)
+	print(max(calList))
 
 task1()
 
@@ -31,6 +31,6 @@ def task2():
 		counter += int(item)
 
 	calList.sort()	
-	print calList[-1] + calList[-2] + calList[-3]
+	print(calList[-1] + calList[-2] + calList[-3])
 
 task2()

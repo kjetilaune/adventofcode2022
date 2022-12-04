@@ -48,7 +48,7 @@ def find_group(s1, s2, s3):
 def task2():
     my_list = readlines("3.txt")
     sum = 0
-    for i in range((int(len(my_list) / 3))):
+    for i in range(len(my_list) // 3):
         sum += find_group(my_list[i * 3], my_list[i * 3 + 1], my_list[i * 3 + 2])
     print(sum)
 
