@@ -80,13 +80,13 @@ class Folder:
 
 def day7():
     commands = readlines("7.txt")
-    topFolder = Folder("/", None)
-    topFolder.next_command(commands[1:])
-    used_space = topFolder.set_size()
-    print("Task 1: " + str(topFolder.get_small_directories()))
+    top_folder = Folder("/", None)
+    top_folder.next_command(commands[1:])
+    used_space = top_folder.set_size()
+    print("Task 1: " + str(top_folder.get_small_directories()))
     need_to_clear_up = 30000000 - (70000000 - used_space)
     print("Need to clear up at least: " + str(need_to_clear_up))
-    print("Task 2: " + str(topFolder.smallest_deletable_directory(need_to_clear_up)))
+    print("Task 2: " + str(top_folder.smallest_deletable_directory(need_to_clear_up)))
 
 
 day7()
