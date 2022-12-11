@@ -1,3 +1,5 @@
+from functools import reduce
+
 
 # -- INPUT --
 def read_tuples(filename):
