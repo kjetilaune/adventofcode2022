@@ -1,5 +1,5 @@
 from functools import reduce
-
+from copy import deepcopy
 
 # -- INPUT --
 def read_tuples(filename):
